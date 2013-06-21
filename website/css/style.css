@@ -1,55 +1,54 @@
 
 
-/* (320px) iPhone and other small phones */
+/* Default + (320px) iPhone and other small phones */
 @media screen {
   *{
     box-sizing:border-box;
   }
-  .figure img{
-    max-width:100%;
-    height:auto;
-  }
   .page{
     width:100%;
-    max-width:960px;
+    /*max-width:960px;*/
   }
+    .figure, .figure:after {
+      max-width:100%;
+      display:block;
+    }
+      .figure img{
+        max-width:100%;
+        height:auto;
+      }
 
 }
 
 /* (360px) Samsug Galaxy S4 */
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 360px) {
     .figure img {
       display:none;
     }
   .figure:after {
-    max-width:100%;
     content:url(../images/rwd-360.png);
   }
 }
 
 /* (480px) Windows phones */
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 480px) {
   .figure:after {
     content:url(../images/rwd-480.png);
   }
 }
 
 /* (768px) iPad and other small tablet browsers */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .figure:after {
     content:url(../images/rwd-768.png);
   }
 }
 
-/* (480px) Desktop browsers or large tablets */
-@media screen and (min-width: 769px) {
+/* (960px) Desktop browsers or large tablets */
+@media screen and (min-width: 960px) {
   .figure:after {
     content:url(../images/rwd-960.png);
   }
-}
-
-/* (480px) Desktop browsers */
-@media screen and (min-width: 960px) {
   .page{
     width:960px;
   }
